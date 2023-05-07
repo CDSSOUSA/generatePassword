@@ -1,0 +1,19 @@
+{
+    "name":"cleber/generatorpassword",
+    "description": "Generator password",
+    "type":"library",
+    "authors": [
+        {
+            "name":"Cleber dos Santos Sousa",
+            "email" : "cleberdossantossousa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    },
+    "require": {
+        "php":">=7.0"
+    }
+}

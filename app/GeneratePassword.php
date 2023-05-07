@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class GeneratePassword
 {
     private $password;
@@ -52,7 +54,7 @@ class GeneratePassword
             $this->accumulator += strlen($this->password);
         }
 
-        return "Password:" . substr(str_shuffle($this->password), 0, $size);
+        return "Password:: " . substr(str_shuffle($this->password), 0, $size);
     }
 
 
@@ -70,7 +72,7 @@ class GeneratePassword
     }
     private function generateSymbol(): string
     {
-        return "!@#$%&*()_+=-";
+        return "!@#$%&*_+=-";
     }
     private function definePassword(bool $option, $data): string
     {
