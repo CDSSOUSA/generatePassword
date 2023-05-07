@@ -64,7 +64,7 @@ class GeneratePassword
     }
     private function generateLowerCase(): string
     {
-        return implode("", range('a', 'z'));
+        return mb_strtolower($this->generateUpperCase());
     }
     private function generateNumber(): string
     {
